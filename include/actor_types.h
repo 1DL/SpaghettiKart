@@ -305,7 +305,9 @@ typedef struct {
     /* 0x02 */ s16 flags;
     /* 0x04 */ s16 shellsAvailable;
     /* 0x06 */ s16 state;
-    /* 0x08 */ f32 unk_08;
+    /* 0x08 */ f32 unk_08;  //When the player press the button to fire a shell, this is set to 1.0f. 
+                            //Then, if it is higher than 0.0f, the game does indeed fire the next available shell. 
+                            //Not sure why a float was used, maybe aligning the struct with parent actor
     /* 0x0C */ f32 unk_0C;
     /* 0x10 */ s16 rotVelocity;
     /* 0x12 */ s16 rotAngle;
