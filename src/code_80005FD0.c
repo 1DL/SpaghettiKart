@@ -7343,7 +7343,40 @@ void cpu_use_item_strategy(s32 playerId) {
                 cpuStrategy->branch = CPU_STRATEGY_WAIT_NEXT_ITEM;
                 cpuStrategy->timer = 0;
             } else {
-                SHELL_ACTOR(actor)->state = RELEASED_SHELL;
+                // Fire greenshell backwards if cpu is ahead of any human player!
+                s16 highestHumanRank = gPlayerOne->currentRank;
+                // handle 2 player gp mode
+                if ((gPlayerTwo->type & PLAYER_HUMAN) && gPlayerTwo->currentRank > highestHumanRank) {
+                    highestHumanRank = gPlayerTwo->currentRank;
+                }
+                // cpu is ahead of a human player, fire backwards
+                if (player->currentRank < highestHumanRank) {
+                    // Same code responsible of firing backwards for human players on update
+                    Vec3f somePos2;
+                    Vec3f somePosVel;
+                    f32 var_f2;
+
+                    var_f2 = 8.0f;
+                    if (player->speed > 8.0f) {
+                        var_f2 = player->speed * 1.2f;
+                    }
+                    somePosVel[0] = 0.0f;
+                    somePosVel[1] = 0.0f;
+                    somePosVel[2] = -var_f2;
+                    func_802B64C4(somePosVel, player->rotation[1] + player->unk_0C0);
+                    SHELL_ACTOR(actor)->velocity[0] = somePosVel[0];
+                    SHELL_ACTOR(actor)->velocity[1] = somePosVel[1];
+                    SHELL_ACTOR(actor)->velocity[2] = somePosVel[2];
+                    SHELL_ACTOR(actor)->state = MOVING_SHELL;
+                    func_800C9060(SHELL_ACTOR(actor)->playerId, SOUND_ARG_LOAD(0x19, 0x00, 0x80, 0x04));
+                    func_800C90F4(SHELL_ACTOR(actor)->playerId,
+                                  (player->characterId * 0x10) + SOUND_ARG_LOAD(0x29, 0x00, 0x80, 0x00));
+                    add_green_shell_in_unexpired_actor_list(CM_FindActorIndex(SHELL_ACTOR(actor)));
+                }   
+                else 
+                {
+                    SHELL_ACTOR(actor)->state = RELEASED_SHELL;
+                }
                 cpuStrategy->timer = 0;
                 cpuStrategy->branch = CPU_STRATEGY_WAIT_NEXT_ITEM;
             }
@@ -7654,7 +7687,7 @@ void cpu_use_item_strategy(s32 playerId) {
         case CPU_STRATEGY_ITEM_BLUE_SPINY_SHELL:
             if (gNumActors < 80) {
                 cpuStrategy->actorIndex = use_blue_shell_item(player);
-                if ((cpuStrategy->actorIndex >= 0) && (cpuStrategy->actorIndex < 255)) {
+                if ((cpuStrategy->actorIndex >= 0) && (cpuStrategy->actorIndex < 300)) {
                     cpuStrategy->branch = CPU_STRATEGY_HOLD_BLUE_SPINY_SHELL;
                     cpuStrategy->timer = 0;
                     cpuStrategy->numItemUse += 1;
@@ -7740,56 +7773,17 @@ void cpu_use_item_strategy(s32 playerId) {
                 cpuStrategy->timer = 0;
             } else if (cpuStrategy->timeBeforeThrow < cpuStrategy->timer) {
 
-                cpuStrategy->timer = 0;
                 TripleShellParent* parent = (TripleShellParent*) actor;
-
-                switch (parent->state)
-                {
-                    case SPAWN_FIRST_SHELL:
-                    case SPAWN_SECOND_SHELL:
-                    case SPAWN_THIRD_SHELL:
-                    case ENABLE_SHELLS:
-                    {   // Wait a little bit, spawnin is not done yet
-                        cpuStrategy->timer = 0;
-                        cpuStrategy->timeBeforeThrow = 30; //1 second
-                    }
-                    case ORBIT_PLAYER:  //Shells are ready, waiting to be fired
-                    {                        
-                        if (parent->shellsAvailable < 1)
-                        {
-                            cpuStrategy->branch = CPU_STRATEGY_WAIT_NEXT_ITEM;
-                        }
-                        else {
-
-                            // If CPU is leading, hold it for a long time, where the time increases based on remaining shell count
-                            if (0 == player->currentRank) {
-                                //1% every 2 seconds at 3 shells
-                                //3% every 2 seconds with 2 shells
-                                //9% every 2 seconds with 1 shell
-                                if (random_int(33 * parent->shellsAvailable) < (4 - parent->shellsAvailable)) { 
-                                    //Low chance achieved, shot it now!
-                                    cpuStrategy->branch = CPU_STRATEGY_THROW_TRIPLE_GREEN_SHELL;
-                                }
-                                else {
-                                    cpuStrategy->timeBeforeThrow = 60; // delay 2 seconds for next check
-                                }
-                            } 
-                            //Shot now!
-                            else {
-                                cpuStrategy->branch = CPU_STRATEGY_THROW_TRIPLE_GREEN_SHELL;
-                            }
-                        }
-                    }
-                    default:
-                    {
-                        cpuStrategy->branch = CPU_STRATEGY_WAIT_NEXT_ITEM;
-                    }
+                if (parent->state == ORBIT_PLAYER) {
+                    cpuStrategy->branch = CPU_STRATEGY_THROW_TRIPLE_GREEN_SHELL;
+                } else {
+                    cpuStrategy->timer = 0;
+                    cpuStrategy->branch = CPU_STRATEGY_WAIT_NEXT_ITEM;
                 }
             }
             break;
 
         case CPU_STRATEGY_THROW_TRIPLE_GREEN_SHELL:
-            clear_expired_strategies(cpuStrategy);
             actor = GET_ACTOR(cpuStrategy->actorIndex);
             if ((((!(SHELL_ACTOR(actor)->flags & 0x8000)) || (SHELL_ACTOR(actor)->type != ACTOR_TRIPLE_GREEN_SHELL))) ||
                 (playerId != SHELL_ACTOR(actor)->playerId)) {
@@ -7847,41 +7841,17 @@ void cpu_use_item_strategy(s32 playerId) {
                 cpuStrategy->timer = 0;
             } else if (cpuStrategy->timeBeforeThrow < cpuStrategy->timer) {
 
-                cpuStrategy->timer = 0;
                 TripleShellParent* parent = (TripleShellParent*) actor;
-
-                switch (parent->state) {
-                    case SPAWN_FIRST_SHELL:
-                    case SPAWN_SECOND_SHELL:
-                    case SPAWN_THIRD_SHELL:
-                    case ENABLE_SHELLS: { // Wait a little bit, spawning is not done yet
-                        cpuStrategy->timeBeforeThrow = 30; // 1 second
-                    }
-                    case ORBIT_PLAYER: // Shells are ready, waiting to be fired
-                    {
-                        if (parent->shellsAvailable < 1) {
-                            cpuStrategy->branch = CPU_STRATEGY_WAIT_NEXT_ITEM;
-                        } else {
-
-                            // If CPU is leading, never release any red shell!
-                            if (0 == player->currentRank) {
-                                cpuStrategy->timeBeforeThrow = 30; // delay 1 second for next check
-                            }
-                            // Shot now!
-                            else {
-                                cpuStrategy->branch = CPU_STRATEGY_THROW_TRIPLE_RED_SHELL;
-                            }
-                        }
-                    }
-                    default: {
-                        cpuStrategy->branch = CPU_STRATEGY_WAIT_NEXT_ITEM;
-                    }
+                if (parent->state == ORBIT_PLAYER) {
+                    cpuStrategy->branch = CPU_STRATEGY_THROW_TRIPLE_RED_SHELL;
+                } else {
+                    cpuStrategy->timer = 0;
+                    cpuStrategy->branch = CPU_STRATEGY_WAIT_NEXT_ITEM;
                 }
             }
             break;
 
         case CPU_STRATEGY_THROW_TRIPLE_RED_SHELL:
-            clear_expired_strategies(cpuStrategy);
             actor = GET_ACTOR(cpuStrategy->actorIndex);
             if ((((!(SHELL_ACTOR(actor)->flags & 0x8000)) || (SHELL_ACTOR(actor)->type != ACTOR_TRIPLE_RED_SHELL))) ||
                 (playerId != SHELL_ACTOR(actor)->playerId)) {
