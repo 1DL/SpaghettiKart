@@ -7687,7 +7687,7 @@ void cpu_use_item_strategy(s32 playerId) {
         case CPU_STRATEGY_ITEM_BLUE_SPINY_SHELL:
             if (gNumActors < 80) {
                 cpuStrategy->actorIndex = use_blue_shell_item(player);
-                if ((cpuStrategy->actorIndex >= 0) && (cpuStrategy->actorIndex < 300)) {
+                if ((cpuStrategy->actorIndex >= 0) && (cpuStrategy->actorIndex < 100)) {
                     cpuStrategy->branch = CPU_STRATEGY_HOLD_BLUE_SPINY_SHELL;
                     cpuStrategy->timer = 0;
                     cpuStrategy->numItemUse += 1;
@@ -7745,7 +7745,7 @@ void cpu_use_item_strategy(s32 playerId) {
         case CPU_STRATEGY_ITEM_TRIPLE_GREEN_SHELL:
             if (gNumActors < 80) {
                 cpuStrategy->actorIndex = use_triple_shell_item(player, ACTOR_TRIPLE_GREEN_SHELL);
-                if ((cpuStrategy->actorIndex >= 0) && (cpuStrategy->actorIndex < 255)) {
+                if ((cpuStrategy->actorIndex >= 0) && (cpuStrategy->actorIndex < 100)) {
                     cpuStrategy->branch = CPU_STRATEGY_ORBIT_TRIPLE_GREEN_SHELL;
                     cpuStrategy->timer = 0;
                     cpuStrategy->numItemUse += 1;
@@ -7813,7 +7813,7 @@ void cpu_use_item_strategy(s32 playerId) {
         case CPU_STRATEGY_ITEM_TRIPLE_RED_SHELL:
             if (gNumActors < 80) {
                 cpuStrategy->actorIndex = use_triple_shell_item(player, ACTOR_TRIPLE_RED_SHELL);
-                if ((cpuStrategy->actorIndex >= 0) && (cpuStrategy->actorIndex < 255)) {
+                if ((cpuStrategy->actorIndex >= 0) && (cpuStrategy->actorIndex < 100)) {
                     cpuStrategy->branch = CPU_STRATEGY_ORBIT_TRIPLE_RED_SHELL;
                     cpuStrategy->timer = 0;
                     cpuStrategy->numItemUse += 1;
