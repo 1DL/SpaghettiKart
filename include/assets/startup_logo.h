@@ -74,17 +74,17 @@ static const ALIGN_ASSET(2) char startup_logo_seg6_gfx_2FF0[] = "__OTR__startup_
 
 static const ALIGN_ASSET(2) char startup_logo_dl5[] = "__OTR__startup_logo/dl5";
 
-static const ALIGN_ASSET(2) char startup_logo_seg6_gfx_3180[] = "__OTR__startup_logo/startup_logo_seg6_gfx_3180";
-
 static const ALIGN_ASSET(2) char startup_logo_dl6[] = "__OTR__startup_logo/dl6";
 
-static const ALIGN_ASSET(2) char startup_logo_seg6_gfx_3308[] = "__OTR__startup_logo/startup_logo_seg6_gfx_3308";
+static const ALIGN_ASSET(2) char startup_logo_seg6_gfx_3180[] = "__OTR__startup_logo/startup_logo_seg6_gfx_3180";
 
 static const ALIGN_ASSET(2) char startup_logo_dl7[] = "__OTR__startup_logo/dl7";
 
-static const ALIGN_ASSET(2) char startup_logo_seg6_gfx_33D8[] = "__OTR__startup_logo/startup_logo_seg6_gfx_33D8";
+static const ALIGN_ASSET(2) char startup_logo_seg6_gfx_3308[] = "__OTR__startup_logo/startup_logo_seg6_gfx_3308";
 
 static const ALIGN_ASSET(2) char startup_logo_dl8[] = "__OTR__startup_logo/dl8";
+
+static const ALIGN_ASSET(2) char startup_logo_seg6_gfx_33D8[] = "__OTR__startup_logo/startup_logo_seg6_gfx_33D8";
 
 static const ALIGN_ASSET(2) char startup_logo_seg6_vtx_3538[] = "__OTR__startup_logo/startup_logo_seg6_vtx_3538";
 
@@ -164,9 +164,9 @@ static const ALIGN_ASSET(2) char startup_logo_seg6_vtx_75A8[] = "__OTR__startup_
 
 static const ALIGN_ASSET(2) char startup_logo_seg6_vtx_77A8[] = "__OTR__startup_logo/startup_logo_seg6_vtx_77A8";
 
-static const ALIGN_ASSET(2) char startup_logo_dl9[] = "__OTR__startup_logo/dl9";
-
 static const ALIGN_ASSET(2) char startup_logo_seg6_gfx_7988[] = "__OTR__startup_logo/startup_logo_seg6_gfx_7988";
+
+static const ALIGN_ASSET(2) char startup_logo_dl9[] = "__OTR__startup_logo/dl9";
 
 static const ALIGN_ASSET(2) char startup_logo_dl10[] = "__OTR__startup_logo/dl10";
 
@@ -180,37 +180,37 @@ static const ALIGN_ASSET(2) char startup_logo_seg6_gfx_7E50[] = "__OTR__startup_
 
 static const ALIGN_ASSET(2) char startup_logo_dl12[] = "__OTR__startup_logo/dl12";
 
-static const ALIGN_ASSET(2) char startup_logo_seg6_gfx_7E90[] = "__OTR__startup_logo/startup_logo_seg6_gfx_7E90";
-
 static const ALIGN_ASSET(2) char startup_logo_dl13[] = "__OTR__startup_logo/dl13";
 
-static const ALIGN_ASSET(2) char startup_logo_seg6_gfx_7ED0[] = "__OTR__startup_logo/startup_logo_seg6_gfx_7ED0";
+static const ALIGN_ASSET(2) char startup_logo_seg6_gfx_7E90[] = "__OTR__startup_logo/startup_logo_seg6_gfx_7E90";
 
 static const ALIGN_ASSET(2) char startup_logo_dl14[] = "__OTR__startup_logo/dl14";
 
-static const ALIGN_ASSET(2) char startup_logo_dl15[] = "__OTR__startup_logo/dl15";
+static const ALIGN_ASSET(2) char startup_logo_seg6_gfx_7ED0[] = "__OTR__startup_logo/startup_logo_seg6_gfx_7ED0";
 
 static const ALIGN_ASSET(2) char startup_logo_seg6_gfx_7F88[] = "__OTR__startup_logo/startup_logo_seg6_gfx_7F88";
 
-static const ALIGN_ASSET(2) char startup_logo_dl16[] = "__OTR__startup_logo/dl16";
+static const ALIGN_ASSET(2) char startup_logo_dl15[] = "__OTR__startup_logo/dl15";
 
 static const ALIGN_ASSET(2) char startup_logo_seg6_gfx_80F0[] = "__OTR__startup_logo/startup_logo_seg6_gfx_80F0";
 
-static const ALIGN_ASSET(2) char startup_logo_dl17[] = "__OTR__startup_logo/dl17";
+static const ALIGN_ASSET(2) char startup_logo_dl16[] = "__OTR__startup_logo/dl16";
 
 static const ALIGN_ASSET(2) char startup_logo_seg6_gfx_8250[] = "__OTR__startup_logo/startup_logo_seg6_gfx_8250";
 
-static const ALIGN_ASSET(2) char startup_logo_dl18[] = "__OTR__startup_logo/dl18";
+static const ALIGN_ASSET(2) char startup_logo_dl17[] = "__OTR__startup_logo/dl17";
 
 static const ALIGN_ASSET(2) char startup_logo_seg6_gfx_83C8[] = "__OTR__startup_logo/startup_logo_seg6_gfx_83C8";
 
-static const ALIGN_ASSET(2) char startup_logo_dl19[] = "__OTR__startup_logo/dl19";
+static const ALIGN_ASSET(2) char startup_logo_dl18[] = "__OTR__startup_logo/dl18";
 
 static const ALIGN_ASSET(2) char startup_logo_seg6_gfx_8548[] = "__OTR__startup_logo/startup_logo_seg6_gfx_8548";
 
-static const ALIGN_ASSET(2) char startup_logo_dl20[] = "__OTR__startup_logo/dl20";
+static const ALIGN_ASSET(2) char startup_logo_dl19[] = "__OTR__startup_logo/dl19";
 
 static const ALIGN_ASSET(2) char startup_logo_seg6_gfx_87A0[] = "__OTR__startup_logo/startup_logo_seg6_gfx_87A0";
+
+static const ALIGN_ASSET(2) char startup_logo_dl20[] = "__OTR__startup_logo/dl20";
 
 static const ALIGN_ASSET(2) char startup_reflection_map_gold[] = "__OTR__startup_logo/reflection_map_gold";
 
@@ -220,9 +220,9 @@ static const ALIGN_ASSET(2) char startup_logo_seg6_gfx_9248[] = "__OTR__startup_
 
 static const ALIGN_ASSET(2) char lights[] = "__OTR__startup_logo/lights";
 
-static const ALIGN_ASSET(2) char startup_logo_seg6_gfx_9320[] = "__OTR__startup_logo/startup_logo_seg6_gfx_9320";
-
 static const ALIGN_ASSET(2) char startup_texture_dl2[] = "__OTR__startup_logo/startup_texture_dl2";
+
+static const ALIGN_ASSET(2) char startup_logo_seg6_gfx_9320[] = "__OTR__startup_logo/startup_logo_seg6_gfx_9320";
 
 static const ALIGN_ASSET(2) char startup_texture_dl3[] = "__OTR__startup_logo/startup_texture_dl3";
 

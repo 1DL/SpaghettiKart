@@ -190,23 +190,23 @@ static const char* d_course_rainbow_road_static_tluts[] = {
 	gTLUTRainbowRoadNeonToad,
 };
 
-static const ALIGN_ASSET(2) char d_course_rainbow_road_neon_mushroom5[] = "__OTR__rainbow_road_data/d_course_rainbow_road_neon_mushroom5";
+static const ALIGN_ASSET(2) char d_course_rainbow_road_neon_mushroom1[] = "__OTR__rainbow_road_data/d_course_rainbow_road_neon_mushroom1";
 
 static const ALIGN_ASSET(2) char d_course_rainbow_road_neon_mushroom2[] = "__OTR__rainbow_road_data/d_course_rainbow_road_neon_mushroom2";
 
-static const ALIGN_ASSET(2) char d_course_rainbow_road_neon_mushroom4[] = "__OTR__rainbow_road_data/d_course_rainbow_road_neon_mushroom4";
-
-static const ALIGN_ASSET(2) char d_course_rainbow_road_neon_mushroom1[] = "__OTR__rainbow_road_data/d_course_rainbow_road_neon_mushroom1";
-
 static const ALIGN_ASSET(2) char d_course_rainbow_road_neon_mushroom3[] = "__OTR__rainbow_road_data/d_course_rainbow_road_neon_mushroom3";
 
-static const ALIGN_ASSET(2) char d_course_rainbow_road_neon_mario4[] = "__OTR__rainbow_road_data/d_course_rainbow_road_neon_mario4";
+static const ALIGN_ASSET(2) char d_course_rainbow_road_neon_mushroom4[] = "__OTR__rainbow_road_data/d_course_rainbow_road_neon_mushroom4";
 
-static const ALIGN_ASSET(2) char d_course_rainbow_road_neon_mario3[] = "__OTR__rainbow_road_data/d_course_rainbow_road_neon_mario3";
+static const ALIGN_ASSET(2) char d_course_rainbow_road_neon_mushroom5[] = "__OTR__rainbow_road_data/d_course_rainbow_road_neon_mushroom5";
+
+static const ALIGN_ASSET(2) char d_course_rainbow_road_neon_mario1[] = "__OTR__rainbow_road_data/d_course_rainbow_road_neon_mario1";
 
 static const ALIGN_ASSET(2) char d_course_rainbow_road_neon_mario2[] = "__OTR__rainbow_road_data/d_course_rainbow_road_neon_mario2";
 
-static const ALIGN_ASSET(2) char d_course_rainbow_road_neon_mario1[] = "__OTR__rainbow_road_data/d_course_rainbow_road_neon_mario1";
+static const ALIGN_ASSET(2) char d_course_rainbow_road_neon_mario3[] = "__OTR__rainbow_road_data/d_course_rainbow_road_neon_mario3";
+
+static const ALIGN_ASSET(2) char d_course_rainbow_road_neon_mario4[] = "__OTR__rainbow_road_data/d_course_rainbow_road_neon_mario4";
 
 static const ALIGN_ASSET(2) char d_course_rainbow_road_neon_mario5[] = "__OTR__rainbow_road_data/d_course_rainbow_road_neon_mario5";
 

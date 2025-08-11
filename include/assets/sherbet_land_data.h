@@ -318,9 +318,9 @@ static const ALIGN_ASSET(2) char d_course_sherbet_land_dl_ice_block[] = "__OTR__
 
 static const ALIGN_ASSET(2) char d_course_sherbet_land_dl_7228[] = "__OTR__sherbet_land_data/d_course_sherbet_land_dl_7228";
 
-static const ALIGN_ASSET(2) char d_course_sherbet_land_light1[] = "__OTR__sherbet_land_data/d_course_sherbet_land_light1";
-
 static const ALIGN_ASSET(2) char sherbet_land_data_seg6_lights_7240[] = "__OTR__sherbet_land_data/sherbet_land_data_seg6_lights_7240";
+
+static const ALIGN_ASSET(2) char d_course_sherbet_land_light1[] = "__OTR__sherbet_land_data/d_course_sherbet_land_light1";
 
 static const ALIGN_ASSET(2) char sherbet_land_data_seg6_lights_7258[] = "__OTR__sherbet_land_data/sherbet_land_data_seg6_lights_7258";
 
@@ -350,9 +350,9 @@ static const ALIGN_ASSET(2) char d_course_sherbet_land_penguin_eye[] = "__OTR__s
 
 static const ALIGN_ASSET(2) char d_course_sherbet_land_penguin_eyes_model[] = "__OTR__sherbet_land_data/d_course_sherbet_land_penguin_eyes_model";
 
-static const ALIGN_ASSET(2) char d_course_sherbet_land_dl_8368[] = "__OTR__sherbet_land_data/d_course_sherbet_land_dl_8368";
-
 static const ALIGN_ASSET(2) char sherbet_land_data_seg6_gfx_8368[] = "__OTR__sherbet_land_data/sherbet_land_data_seg6_gfx_8368";
+
+static const ALIGN_ASSET(2) char d_course_sherbet_land_dl_8368[] = "__OTR__sherbet_land_data/d_course_sherbet_land_dl_8368";
 
 static const ALIGN_ASSET(2) char d_course_sherbet_land_penguin_nose_model[] = "__OTR__sherbet_land_data/d_course_sherbet_land_penguin_nose_model";
 
@@ -364,9 +364,9 @@ static const ALIGN_ASSET(2) char d_course_sherbet_land_penguin_head_model1[] = "
 
 static const ALIGN_ASSET(2) char d_course_sherbet_land_penguin_head_model2[] = "__OTR__sherbet_land_data/d_course_sherbet_land_penguin_head_model2";
 
-static const ALIGN_ASSET(2) char d_course_sherbet_land_dl_85B0[] = "__OTR__sherbet_land_data/d_course_sherbet_land_dl_85B0";
-
 static const ALIGN_ASSET(2) char sherbet_land_data_seg6_gfx_85B0[] = "__OTR__sherbet_land_data/sherbet_land_data_seg6_gfx_85B0";
+
+static const ALIGN_ASSET(2) char d_course_sherbet_land_dl_85B0[] = "__OTR__sherbet_land_data/d_course_sherbet_land_dl_85B0";
 
 static const ALIGN_ASSET(2) char d_course_sherbet_land_penguin_arms_model[] = "__OTR__sherbet_land_data/d_course_sherbet_land_penguin_arms_model";
 

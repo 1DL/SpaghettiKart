@@ -670,9 +670,9 @@ static const ALIGN_ASSET(2) char d_course_koopa_troopa_beach_bird_wing_3_model[]
 
 static const ALIGN_ASSET(2) char d_course_koopa_troopa_beach_dl_16990[] = "__OTR__koopa_troopa_beach_data/d_course_koopa_troopa_beach_dl_16990";
 
-static const ALIGN_ASSET(2) char d_course_koopa_troopa_beach_light2[] = "__OTR__koopa_troopa_beach_data/d_course_koopa_troopa_beach_light2";
-
 static const ALIGN_ASSET(2) char koopa_troopa_beach_data_seg6_lights_16B78[] = "__OTR__koopa_troopa_beach_data/koopa_troopa_beach_data_seg6_lights_16B78";
+
+static const ALIGN_ASSET(2) char d_course_koopa_troopa_beach_light2[] = "__OTR__koopa_troopa_beach_data/d_course_koopa_troopa_beach_light2";
 
 static const ALIGN_ASSET(2) char d_course_koopa_troopa_beach_tree_model[] = "__OTR__koopa_troopa_beach_data/d_course_koopa_troopa_beach_tree_model";
 
@@ -686,15 +686,15 @@ static const ALIGN_ASSET(2) char d_course_koopa_troopa_beach_dl_18520[] = "__OTR
 
 static const ALIGN_ASSET(2) char koopa_troopa_beach_data_seg6_gfx_18520[] = "__OTR__koopa_troopa_beach_data/koopa_troopa_beach_data_seg6_gfx_18520";
 
-static const ALIGN_ASSET(2) char d_course_koopa_troopa_beach_dl_185E8[] = "__OTR__koopa_troopa_beach_data/d_course_koopa_troopa_beach_dl_185E8";
-
 static const ALIGN_ASSET(2) char koopa_troopa_beach_data_seg6_gfx_185E8[] = "__OTR__koopa_troopa_beach_data/koopa_troopa_beach_data_seg6_gfx_185E8";
+
+static const ALIGN_ASSET(2) char d_course_koopa_troopa_beach_dl_185E8[] = "__OTR__koopa_troopa_beach_data/d_course_koopa_troopa_beach_dl_185E8";
 
 static const ALIGN_ASSET(2) char d_course_koopa_troopa_beach_dl_tree_top1[] = "__OTR__koopa_troopa_beach_data/d_course_koopa_troopa_beach_dl_tree_top1";
 
-static const ALIGN_ASSET(2) char d_course_koopa_troopa_beach_dl_18608[] = "__OTR__koopa_troopa_beach_data/d_course_koopa_troopa_beach_dl_18608";
-
 static const ALIGN_ASSET(2) char koopa_troopa_beach_data_seg6_gfx_18608[] = "__OTR__koopa_troopa_beach_data/koopa_troopa_beach_data_seg6_gfx_18608";
+
+static const ALIGN_ASSET(2) char d_course_koopa_troopa_beach_dl_18608[] = "__OTR__koopa_troopa_beach_data/d_course_koopa_troopa_beach_dl_18608";
 
 static const ALIGN_ASSET(2) char koopa_troopa_beach_data_seg6_gfx_186A8[] = "__OTR__koopa_troopa_beach_data/koopa_troopa_beach_data_seg6_gfx_186A8";
 
@@ -714,9 +714,9 @@ static const ALIGN_ASSET(2) char d_course_koopa_troopa_beach_dl_18870[] = "__OTR
 
 static const ALIGN_ASSET(2) char koopa_troopa_beach_data_seg6_gfx_18870[] = "__OTR__koopa_troopa_beach_data/koopa_troopa_beach_data_seg6_gfx_18870";
 
-static const ALIGN_ASSET(2) char d_course_koopa_troopa_beach_dl_18938[] = "__OTR__koopa_troopa_beach_data/d_course_koopa_troopa_beach_dl_18938";
-
 static const ALIGN_ASSET(2) char koopa_troopa_beach_data_seg6_gfx_18938[] = "__OTR__koopa_troopa_beach_data/koopa_troopa_beach_data_seg6_gfx_18938";
+
+static const ALIGN_ASSET(2) char d_course_koopa_troopa_beach_dl_18938[] = "__OTR__koopa_troopa_beach_data/d_course_koopa_troopa_beach_dl_18938";
 
 static const ALIGN_ASSET(2) char d_course_koopa_troopa_beach_dl_tree_top2[] = "__OTR__koopa_troopa_beach_data/d_course_koopa_troopa_beach_dl_tree_top2";
 
@@ -724,9 +724,9 @@ static const ALIGN_ASSET(2) char koopa_troopa_beach_data_seg6_gfx_18958[] = "__O
 
 static const ALIGN_ASSET(2) char d_course_koopa_troopa_beach_dl_18958[] = "__OTR__koopa_troopa_beach_data/d_course_koopa_troopa_beach_dl_18958";
 
-static const ALIGN_ASSET(2) char d_course_koopa_troopa_beach_dl_189F8[] = "__OTR__koopa_troopa_beach_data/d_course_koopa_troopa_beach_dl_189F8";
-
 static const ALIGN_ASSET(2) char koopa_troopa_beach_data_seg6_gfx_189F8[] = "__OTR__koopa_troopa_beach_data/koopa_troopa_beach_data_seg6_gfx_189F8";
+
+static const ALIGN_ASSET(2) char d_course_koopa_troopa_beach_dl_189F8[] = "__OTR__koopa_troopa_beach_data/d_course_koopa_troopa_beach_dl_189F8";
 
 static const ALIGN_ASSET(2) char d_course_koopa_troopa_beach_dl_tree_trunk2[] = "__OTR__koopa_troopa_beach_data/d_course_koopa_troopa_beach_dl_tree_trunk2";
 
@@ -752,9 +752,9 @@ static const ALIGN_ASSET(2) char koopa_troopa_beach_data_seg6_gfx_18CA8[] = "__O
 
 static const ALIGN_ASSET(2) char d_course_koopa_troopa_beach_dl_18CA8[] = "__OTR__koopa_troopa_beach_data/d_course_koopa_troopa_beach_dl_18CA8";
 
-static const ALIGN_ASSET(2) char d_course_koopa_troopa_beach_dl_18D48[] = "__OTR__koopa_troopa_beach_data/d_course_koopa_troopa_beach_dl_18D48";
-
 static const ALIGN_ASSET(2) char koopa_troopa_beach_data_seg6_gfx_18D48[] = "__OTR__koopa_troopa_beach_data/koopa_troopa_beach_data_seg6_gfx_18D48";
+
+static const ALIGN_ASSET(2) char d_course_koopa_troopa_beach_dl_18D48[] = "__OTR__koopa_troopa_beach_data/d_course_koopa_troopa_beach_dl_18D48";
 
 static const ALIGN_ASSET(2) char d_course_koopa_troopa_beach_dl_tree_trunk3[] = "__OTR__koopa_troopa_beach_data/d_course_koopa_troopa_beach_dl_tree_trunk3";
 
